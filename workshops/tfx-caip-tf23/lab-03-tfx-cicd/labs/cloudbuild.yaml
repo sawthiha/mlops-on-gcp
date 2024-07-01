@@ -19,6 +19,9 @@
 # supports automated building and deploying.
 # 
 
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 steps:
 # Build the image that encapsulates the pipeline.
 - name: 'gcr.io/cloud-builders/docker'
